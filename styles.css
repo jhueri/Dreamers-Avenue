@@ -13,6 +13,11 @@ body {
   padding: 20px;
 }
 
+a {
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* Inherits the color from the parent element, or you can set a custom color */
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Times New Roman', sans-serif;
 }
