@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-content {
-  max-width: 50%;
+  max-width: 100%;
 }
 
 .hero h1 {
@@ -117,6 +117,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 50px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 50px auto;
 }
 
 .container h2 {
@@ -154,46 +156,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .container a:hover {
   text-decoration: underline;
-}
-
-/* About Us Section */
-#about-us {
-  margin-top: 50px;
-}
-
-.founder-img {
-  width: 200px;
-  border-radius: 100%;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-content {
-    max-width: 100%;
-  }
-
-  .founder-info {
-    flex-direction: column;
-  }
-
-  .navbar ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navbar li {
-    margin-left: 0;
-    margin-bottom: 10px;
-  }
-
-  .navbar {
-    padding: 10px;
-  }
 }
 
 /* Apply Now Section */
@@ -260,217 +222,4 @@ h1, h2, h3, h4, h5, h6 {
 
 .apply-option:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* Scholarships Section */
-#scholarships {
-  padding: 50px;
-  background-color: #fff;
-  margin-top: 50px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#scholarships h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #003072;
-}
-
-#scholarships p {
-  font-size: 1.1rem;
-  margin-bottom: 30px;
-  color: #333333;
-}
-
-/* Scholarships Container */
-.scholarships-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 30px 40px; /* Adjusted vertical and horizontal spacing */
-  border-radius: 8px;
-}
-
-/* Scholarship Card */
-.scholarship-card {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease;
-  padding: 20px;
-}
-
-.scholarship-card:hover {
-  transform: translateY(-10px);
-}
-
-.scholarship-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.scholarship-card .content {
-  padding: 20px;
-}
-
-.scholarship-card h3 {
-  font-size: 1.5rem;
-  color: #003072;
-  margin-bottom: 10px;
-}
-
-.scholarship-card p {
-  font-size: 1rem;
-  margin-bottom: 10px;
-}
-
-.scholarship-card .amount {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #003072;
-}
-
-.scholarship-card .eligibility {
-  font-size: 1rem;
-  color: #333333;
-  margin-top: 10px;
-}
-
-/* Main Content Styles */
-.main {
-  padding: 2rem;
-}
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  margin-top: 30px;
-}
-
-.contact-heading {
-  text-align: left;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.contact-description {
-  text-align: center;
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-}
-
-/* Contact Details Section */
-.contact-details {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.contact-method {
-  flex: 1;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-.contact-method h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.contact-method p {
-  font-size: 1rem;
-}
-
-.contact-method-text {
-  margin-bottom: 10px;
-}
-
-.contact-link {
-  display: block;
-  color: #333;
-  text-decoration: none;
-  margin: 5px 0;
-}
-
-.contact-link:hover {
-  color: #f1c40f;
-}
-
-/* Contact Form Styles */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.form-label {
-  font-size: 1.1rem;
-  font-weight: bold;
-}
-
-.form-input, .form-textarea {
-  padding: 0.75rem;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 100%;
-}
-
-.form-textarea {
-  height: 150px;
-}
-
-.form-button {
-  background-color: #f1c40f;
-  color: white;
-  border: none;
-  padding: 1rem;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.form-button:hover {
-  background-color: #e67e22;
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-  .contact-details {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contact-method {
-    margin-right: 0;
-    margin-bottom: 30px;
-  }
-
-  .container {
-    padding: 1rem;
-  }
-
-  .contact-heading {
-    font-size: 2rem;
-  }
-
-  .contact-description {
-    font-size: 1rem;
-  }
-
-  .form-label {
-    font-size: 1rem;
-  }
-
-  .form-input, .form-textarea {
-    font-size: 1rem;
-  }
-
-  .form-button {
-    font-size: 1rem;
-  }
-}
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0);
