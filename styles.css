@@ -32,6 +32,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   top: 0;
   z-index: 100;
+  justify-content: space-between;
 }
 
 .navbar ul {
@@ -67,15 +68,19 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.hero .logo img {
+.hero .logo img{
   width: 500px;
   height: auto;
 }
 
 .hero-content {
   max-width: 100%;
+  margin-left: 30px;
 }
 
 .hero h1 {
@@ -223,3 +228,191 @@ h1, h2, h3, h4, h5, h6 {
 .apply-option:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0);
+}
+
+/* Scholarships Section Styling */
+#scholarships {
+  margin-top: 80px;
+  padding: 50px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#scholarships h2 {
+  font-size: 2.5rem;
+  color: #003072;
+  margin-bottom: 20px;
+}
+
+#scholarships p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.scholarships-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.scholarship-card {
+  background-color: #fff;
+  border: 2px solid #003072;
+  border-radius: 10px;
+  padding: 20px;
+  width: 45%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scholarship-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.scholarship-name {
+  font-size: 1.8rem;
+  color: #003072;
+  margin-bottom: 10px;
+}
+
+.scholarship-by,
+.scholarship-description,
+.scholarship-amount,
+.scholarship-eligibility {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.scholarship-by strong,
+.scholarship-amount strong,
+.scholarship-eligibility strong {
+  font-weight: bold;
+}
+
+.scholarship-description {
+  font-style: italic;
+}
+
+.scholarship-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  background-color: #003072;
+  color: white !important;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #efbb5c;
+}
+
+/* Contact Form Styling */
+.contact-form {
+  margin-top: 30px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: none;
+}
+
+.contact-form .form-button {
+  background-color: #003072;
+  color: white;
+  font-size: 1.1rem;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.contact-form .form-button:hover {
+  background-color: #efbb5c;
+}
+
+/* Contact Details Styling */
+.contact-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.contact-method {
+  flex: 1;
+  min-width: 280px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.contact-method-heading {
+  font-size: 1.5rem;
+  color: #003072;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.contact-method-text {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.contact-link {
+  display: inline-block;
+  font-size: 1rem;
+  color: #003072;
+  font-weight: bold;
+  margin: 5px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #efbb5c;
+  transform: scale(1.1);
+}
+
+#contact-us {
+  margin-top: 80px;
+}
