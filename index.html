@@ -7,13 +7,13 @@
   <title>Dreamers Avenue</title>
 </head>
 <body>
-  <header>
+  <header class="header">
     <nav class="navbar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="programs.html">Programs</a></li>
-        <li><a href="scholarships.html">Scholarships</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+      <ul class="navbar-list">
+        <li class="navbar-item"><a href="index.html" class="navbar-link">Home</a></li>
+        <li class="navbar-item"><a href="mentorship.html" class="navbar-link">Mentorship</a></li>
+        <li class="navbar-item"><a href="essay.html" class="navbar-link">Essay Review</a></li>
+        <li class="navbar-item"><a href="scholarships.html" class="navbar-link">Scholarships</a></li>
       </ul>
     </nav>
   </header>
@@ -24,7 +24,7 @@
         <img src="assets/dreamersavenuelogo.png" alt="Dreamers Avenue logo in blue and white">
       </div>
       <div class="hero-content">
-        <h1>Welcome to Dreamers Avenue</h1>
+        <h1>Welcome to Dreamers Avenue!</h1>
         <p>At Dreamers Avenue, we believe that every student, regardless of their background or immigration status, deserves the opportunity to pursue higher education and achieve their dreams.</p>
         <p>We are a community built on hope, resilience, and the power of mentorship, dedicated to supporting undocumented students as they navigate the college application process.</p>
         
@@ -38,6 +38,29 @@
           <a href="https://forms.gle/xMGnbXZUN3UGacpm6" target="_blank">Become a Mentee!</a>
         </button>
         <p class="mentee-text">Receive personalized support and resources to help you navigate the college application process for FREE!</p>        
+      </div>
+    </section>
+
+    <section id="contact-us" class="container">
+      <h2 class="contact-heading">Contact Us</h2>
+      <p class="contact-description">We'd love to hear from you! Whether you have questions, suggestions, or just want to connect, feel free to reach out to us.</p>
+
+      <form action="https://formspree.io/f/xpwzoply" method="POST" class="contact-form">
+        <label for="email" class="form-label">Your email:</label>
+        <input type="email" name="email" id="email" class="form-input" required>
+
+        <label for="message" class="form-label">Your message:</label>
+        <textarea name="message" id="message" class="form-textarea" required></textarea>
+
+        <button type="submit" class="form-button">Send</button>
+      </form>
+
+      <div class="contact-method">
+        <h3 class="contact-method-heading">Follow Us</h3>
+        <p class="contact-method-text">Stay updated with our latest news and events.</p>
+        <a href="https://www.linkedin.com/company/dreamers-avenue" target="_blank" class="contact-link">LinkedIn</a>
+        <a href="https://www.tiktok.com/@dreamers.ave" target="_blank" class="contact-link">TikTok</a>
+        <a href="https://www.instagram.com/dreamers.ave/" target="_blank" class="contact-link">Instagram</a>
       </div>
     </section>
   </main>

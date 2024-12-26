@@ -14,8 +14,8 @@ body {
 }
 
 a {
-  text-decoration: none; /* Removes the underline */
-  color: inherit; /* Inherits the color from the parent element, or you can set a custom color */
+  text-decoration: none; 
+  color: inherit;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -58,7 +58,6 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 4px;
 }
 
-/* Reusable Hero Section */
 .hero {
   display: flex;
   justify-content: space-between;
@@ -107,15 +106,14 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 5px;
   cursor: pointer;
   margin-top: 10px;
-  text-transform: uppercase;
   transition: background-color 0.3s ease;
+  font-family: 'Times New Roman', sans-serif;
 }
 
 .btn:hover {
   background-color: #efbb5c;
 }
 
-/* Reusable Container Section */
 .container {
   background-color: #fff;
   padding: 50px;
@@ -163,7 +161,6 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: underline;
 }
 
-/* Apply Now Section */
 .apply-now {
   text-align: left;
 }
@@ -214,7 +211,6 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #003072;
   color: #fff;
   font-size: 1rem;
-  text-transform: uppercase;
   padding: 10px 15px;
   border-radius: 5px;
   text-decoration: none;
@@ -230,7 +226,6 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0);
 }
 
-/* Scholarships Section Styling */
 #scholarships {
   margin-top: 80px;
   padding: 50px;
@@ -312,7 +307,6 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 5px;
   cursor: pointer;
   margin-top: 10px;
-  text-transform: uppercase;
   transition: background-color 0.3s ease;
 }
 
@@ -320,7 +314,6 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #efbb5c;
 }
 
-/* Contact Form Styling */
 .contact-form {
   margin-top: 30px;
   background-color: #fff;
@@ -370,7 +363,6 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #efbb5c;
 }
 
-/* Contact Details Styling */
 .contact-details {
   display: flex;
   flex-wrap: wrap;
@@ -415,4 +407,31 @@ h1, h2, h3, h4, h5, h6 {
 
 #contact-us {
   margin-top: 80px;
+}
+
+.section-heading {
+  font-size: 2rem;
+  color: #003072;
+  margin-bottom: 20px;
+}
+
+.section-description, .eligibility-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.eligibility-heading {
+  font-size: 1.5rem;
+  color: #003072;
+  margin-bottom: 10px;
+}
+
+.form-link-container {
+  margin-top: 20px;
+}
+
+.btn a {
+  color: white;
+  text-decoration: none;
 }
