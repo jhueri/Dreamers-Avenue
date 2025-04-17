@@ -371,156 +371,6 @@ nav svg {
     object-fit: cover;
     border-radius: 0;
   }  
-
-  .description-container {
-    padding: 15px 0 15px 0;  
-    text-align: left;  
-    display: flex;  
-    justify-content: space-between;  
-    align-items: flex-start;  
-    height: 100vh;
-    gap: 0;
-    background-color: #f4f4f4;
-    margin-bottom: -40px;
-}
-
-.how-it-works {  
-    background-color: #f4f4f4;  
-    padding: 50px;
-    flex-basis: 60%;
-    display: flex;  
-    justify-content: center;  
-    align-items: center;  
-    flex-direction: column;   
-    text-align: left;
-    margin-top: 25px;
- }
-
-.how-it-works h3 {
-    font-size: 40px;
-    color: var(--color-1);
-    margin-bottom: 15px;
-    text-align: left;
-}
-
-.how-it-works p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 18px;
-    margin-bottom: 20px;
-}
- 
-.how-it-works ul {  
-    list-style: none;  
-    font-size: 18px;
-    padding: 0;  
-    margin: 0; 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
- }  
-   
-.how-it-works li {  
-    margin-bottom: 20px;  
- }  
-
-.eligibility {
-    flex-basis: 30%;  
-    display: block;    
-    padding: 35px;
-    background-color: #e9e9e9;
-    margin-right: 50px;
-    margin-top: 85px;
-}
-
-.eligibility-media-mentor {
-    display: none;
-}
-
-.eligibility-media-mentee {
-    display: none;
-}
-
-.eligibility-header {
-    margin-bottom: 10px;
-    font-size: 25px;
-    color: var(--color-1);
-}
-
-.eligibility h3 {
-    margin-bottom: 7px;
-    font-size: 20px;
-}
-
-.eligibility ul {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 15px;
-}
-
-.eligibility li {
-    margin-bottom: 25px;
-    margin-left: 35px;
-}
-
-.description-container:nth-child(2) {
-    flex-direction: row-reverse;
-}
-
-.description-container:nth-child(2) .eligibility {
-    margin-left: 50px;
-    margin-right: 0;
-    margin-top: 105px;
-}
-
-.description-container:nth-child(2) .how-it-works {
-    margin-top: 25px;
-}
-
-.note {
-    color: var(--color-1);
-}
-   
-.apply-now {  
-    background-color: #0149ac;  
-    padding: 50px;  
-    color: white;  
-    text-align: center;  
- }
-
-.apply-now h2 {
-    margin-bottom: 20px;
-    font-size: 30px;
-}
-
-.apply-now p {
-    font-size: 18px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-   
-.apply-buttons {  
-    display: flex;  
-    justify-content: space-around;  
-    margin-top: 30px;
- }
-
-.apply-buttons a {
-    text-decoration: none;
-    font-size: 20px;
-}
-   
-.apply-mentee, .apply-mentor {  
-    background-color: #efbb5c;  
-    color: #003072;  
-    padding: 10px 20px;  
-    border: none;  
-    border-radius: 5px;  
-    cursor: pointer;  
- }
-
-.apply-mentee {
-    margin-right: -500px;
- }
-   
- .apply-mentee:hover, .apply-mentor:hover {  
-    background-color: #c09648;  
- }  
    
  .contact-us {  
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
@@ -580,6 +430,135 @@ nav svg {
     cursor: pointer;  
  }  
  
+ /* Shared styling for all major sections */
+.cohort-timeline,
+.application-process,
+.matching-process,
+.meeting-expectations,
+.ready-to-join {
+    padding: 40px 20px;
+    margin: 40px auto;
+    max-width: 1000px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* --- COHORT TIMELINE --- */
+.cohort-timeline {
+    background-color: var(--color-3);
+    color: var(--color-1);
+    border-top: 4px solid var(--color-1);
+}
+
+.cohort-timeline h2 {
+    font-size: 28px;
+    color: var(--color-1);
+    margin-bottom: 10px;
+}
+
+.cohort-timeline h3 {
+    font-size: 18px;
+    color: var(--color-1);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.cohort-timeline p {
+    margin: 6px 0;
+    font-weight: 500;
+}
+
+/* --- APPLICATION PROCESS --- */
+.application-process {
+    background-color: var(--color-1);
+    color: var(--color-2);
+    border-left: 6px solid var(--color-4);
+}
+
+.application-process h2,
+.application-process h3 {
+    color: var(--color-4);
+}
+
+.application-process ul {
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+.application-process a {
+    display: inline-block;
+    background-color: var(--color-4);
+    color: var(--color-1);
+    font-weight: bold;
+    padding: 10px 18px;
+    margin-top: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.application-process a:hover {
+    background-color: #e1a83b;
+}
+
+/* --- MATCHING PROCESS --- */
+.matching-process {
+    background-color: var(--color-3);
+    color: var(--color-1);
+    border-left: 6px solid var(--color-1);
+}
+
+.matching-process h3 {
+    color: var(--color-1);
+    font-size: 24px;
+}
+
+.matching-process ul {
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+/* --- MEETING EXPECTATIONS --- */
+.meeting-expectations {
+    background-color: var(--color-1);
+    color: var(--color-2);
+    border-left: 6px solid var(--color-4);
+}
+
+.meeting-expectations h3 {
+    color: var(--color-4);
+    font-size: 24px;
+}
+
+.meeting-expectations ul {
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+/* --- READY TO JOIN --- */
+.ready-to-join {
+    background-color: var(--color-3);
+    color: var(--color-1);
+    border-top: 4px solid var(--color-4);
+}
+
+.ready-to-join h3 {
+    color: var(--color-1);
+    font-size: 24px;
+}
+
+.ready-to-join a {
+    display: inline-block;
+    background-color: var(--color-1);
+    color: var(--color-2);
+    font-weight: bold;
+    padding: 10px 18px;
+    margin: 10px 10px 0 0;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.ready-to-join a:hover {
+    background-color: #001d4f;
+}
 
 @media only screen and (max-width: 768px) {
 
@@ -616,20 +595,6 @@ nav svg {
         padding: 35px;
      }  
 
-     .col1-a, .col2-a, .col3-a {  
-        flex-basis: 100%;  
-        margin-left: 0;  
-        margin-bottom: 20px;  
-     }  
-
-    .col2-a img, .col3-a img {   
-        margin-top: 20px; 
-      }  
-
-      .col1-a img, .col2-a img, .col3-a img {   
-          width: 60px;
-      }  
-
     .social-links {
         font-size: 13px;
     }
@@ -642,6 +607,20 @@ nav svg {
     flex-direction: column;  
     font-size: 13px;
 }  
+
+.col1-a, .col2-a, .col3-a {  
+    flex-basis: 100%;  
+    margin-left: 0;  
+    margin-bottom: 20px;  
+ }  
+
+.col2-a img, .col3-a img {   
+    margin-top: 20px; 
+  }  
+
+  .col1-a img, .col2-a img, .col3-a img {   
+      width: 60px;
+  }  
 
 .col1-b {
     flex-basis: 100%;
@@ -671,110 +650,6 @@ nav svg {
 
 .col1-b a {
     font-size: 15px;
-}
-
-.mentorship-container {
-    margin-bottom: 10px;
-    flex-direction: column;
-}
-
-.description-container {
-    flex-direction: column;
-    margin-top: 150px;
-    margin-left: -17px;
-    margin-right: -20px;
-}
-
-.how-it-works:nth-child(2) {
-    margin-top: -120px;
-}
-
-.how-it-works {
-    margin-bottom: 20px;
-}
-
-.how-it-works h3 {
-    font-size: 30px;
-}
-
-.how-it-works p {
-    font-size: 15px;
-}
-
-.how-it-works ul {
-    font-size: 15px;
-}
-
-.eligibility { 
-    display: none;
-}
-
-.eligibility-media-mentor {
-    display: block;
-    background-color: #e9e9e9;
-    padding: 20px;
-    margin-top: 50px;
-}
-
-.eligibility-media-mentor h3 {
-    color: black;
-    font-size: 20px;
-}
-
-.eligibility-media-mentor ul {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 15px;
-}
-
-.eligibility-media-mentor li {
-    margin-bottom: 25px;
-    margin-left: 25px;
-    list-style-type: circle;
-}
-
-.eligibility-media-mentee {
-    display: block;
-    background-color: #e9e9e9;
-    padding: 20px;
-    margin-right: 45px;
-}
-
-.eligibility-media-mentee h3 {
-    color: black;
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.eligibility-media-mentee ul {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 15px;
-}
-
-.eligibility-media-mentee li {
-    margin-bottom: 25px;
-    margin-left: 25px;
-    list-style-type: circle;
-}
-
-.apply-now {
-    flex-direction: column;
-    margin-top: 900px;
-}
-
-.apply-now h2 {
-    font-size: 30px;
-}
-
-.apply-now p {
-    font-size: 13px;
-}
-
-.apply-buttons a {
-    font-size: 15px;
-}
-
- .apply-mentee {
-    margin-right: 20px;
 }
     
 .contact-us {  
