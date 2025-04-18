@@ -3,6 +3,17 @@
     padding: 0;
 }
 
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+    transform: translateY(100%);
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 :root {
     --color-1: #003072;
     --color-2: white;
@@ -432,13 +443,30 @@ nav svg {
  
  /* Shared styling for all major sections */
 .cohort-timeline,
-.application-process,
-.matching-process,
-.meeting-expectations,
 .ready-to-join {
     padding: 40px 20px;
     margin: 40px auto;
     max-width: 1000px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.application-process {
+    padding: 40px 20px;
+    margin: 40px auto;
+    font-family: 'Segoe UI', sans-serif;
+    color: var(--color-1);
+}
+
+.matching-process {
+    padding: 40px 20px;
+    margin: 40px auto;
+    font-family: 'Segoe UI', sans-serif;
+    border-left: 6px solid var(--color-4);
+}
+
+.meeting-expectations {
+    padding: 40px 20px;
+    margin: 40px auto;
     font-family: 'Segoe UI', sans-serif;
 }
 
@@ -453,6 +481,7 @@ nav svg {
     font-size: 28px;
     color: var(--color-1);
     margin-bottom: 10px;
+    font-family: "DM "
 }
 
 .cohort-timeline h3 {
@@ -469,14 +498,32 @@ nav svg {
 
 /* --- APPLICATION PROCESS --- */
 .application-process {
-    background-color: var(--color-1);
-    color: var(--color-2);
-    border-left: 6px solid var(--color-4);
+    background-color: rgb(234, 234, 234);
+    color: var(--color-1);
 }
 
 .application-process h2,
 .application-process h3 {
-    color: var(--color-4);
+    color: var(--color-1);
+    font-family: serif;
+}
+
+.application-process h2 {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.application-process h3 {
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+
+.application-process-p1 {
+    padding-bottom: 3px;
+}
+
+.applications-include {
+    padding-top: 10px;
 }
 
 .application-process ul {
@@ -493,10 +540,20 @@ nav svg {
     margin-top: 16px;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    border-radius: 5px;
+    padding-top: 10px;
 }
 
 .application-process a:hover {
     background-color: #e1a83b;
+}
+
+.for-mentees {
+    padding-top: 20px;
+}
+
+.once-you-apply {
+    padding-top: 5px;
 }
 
 /* --- MATCHING PROCESS --- */
@@ -508,7 +565,8 @@ nav svg {
 
 .matching-process h3 {
     color: var(--color-1);
-    font-size: 24px;
+    font-size: 25px;
+    font-family: serif;
 }
 
 .matching-process ul {
@@ -516,16 +574,21 @@ nav svg {
     padding-left: 10px;
 }
 
+.both {
+    padding-top: 10px;
+}
+
 /* --- MEETING EXPECTATIONS --- */
 .meeting-expectations {
-    background-color: var(--color-1);
-    color: var(--color-2);
-    border-left: 6px solid var(--color-4);
+    background-color: rgb(234, 234, 234);
+    color: var(--color-1);
 }
 
 .meeting-expectations h3 {
-    color: var(--color-4);
-    font-size: 24px;
+    color: var(--color-1);
+    font-size: 25px;
+    font-family: serif;
+    padding-bottom: 10px;
 }
 
 .meeting-expectations ul {
@@ -554,6 +617,7 @@ nav svg {
     margin: 10px 10px 0 0;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    border-radius: 5px;
 }
 
 .ready-to-join a:hover {
