@@ -57,7 +57,7 @@ nav a:hover {
 }
 
 .nav-logo img {
-    margin-right: 700px;
+    margin-right: 600px;
     width: 80px;
     height: auto;
 }
@@ -353,6 +353,7 @@ nav svg {
 
 .apply-now-button {
     margin-top: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .arrow-forward {
@@ -481,7 +482,6 @@ nav svg {
     font-size: 28px;
     color: var(--color-1);
     margin-bottom: 10px;
-    font-family: "DM "
 }
 
 .cohort-timeline h3 {
@@ -505,7 +505,6 @@ nav svg {
 .application-process h2,
 .application-process h3 {
     color: var(--color-1);
-    font-family: serif;
 }
 
 .application-process h2 {
@@ -548,8 +547,13 @@ nav svg {
     background-color: #e1a83b;
 }
 
+.for-mentors {
+    margin-bottom: 20px;
+}
+
 .for-mentees {
     padding-top: 20px;
+    border-top: 4px solid var(--color-1);
 }
 
 .once-you-apply {
@@ -566,7 +570,6 @@ nav svg {
 .matching-process h3 {
     color: var(--color-1);
     font-size: 25px;
-    font-family: serif;
 }
 
 .matching-process ul {
@@ -587,7 +590,6 @@ nav svg {
 .meeting-expectations h3 {
     color: var(--color-1);
     font-size: 25px;
-    font-family: serif;
     padding-bottom: 10px;
 }
 
@@ -622,6 +624,74 @@ nav svg {
 
 .ready-to-join a:hover {
     background-color: #001d4f;
+}
+
+/* VOLUNTEER */
+
+.volunteer-hero {
+    padding: 50px;
+    text-align: center;
+    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.volunteer-options {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.volunteer-role {
+    flex-basis: 30%;
+    background-color: #0149ac;
+    color: white;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.volunteer-role img {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.volunteer-button {
+    display: inline-block;
+    background-color: white;
+    color: #0149ac;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.volunteer-button:hover {
+    background-color: #e0e0e0;
+}
+
+.volunteer-faq {
+    background-color: #f4f4f4;
+    padding: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.volunteer-faq h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.volunteer-faq ul {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -724,3 +794,54 @@ nav svg {
     padding: 10px;  
 }  
 }
+
+/* COMING SOON */
+
+.coming-soon-page {
+    margin: 0;
+    height: 72vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .coming-soon-page .coming-soon-container {
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #333;
+  }  
+  
+  .logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: -30px;
+  }
+  
+  .coming-soon-container h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #0149ac; 
+  }
+  
+  .coming-soon-container p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  .coming-soon-container a {
+    color: #e1a83b;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .coming-soon-container a:hover {
+    text-decoration: underline;
+  }
