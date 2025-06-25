@@ -1,129 +1,287 @@
-<!DOCTYPE html>  
-<html lang="en">  
-<head>  
-   <meta charset="UTF-8">  
-   <meta name="viewport" content="width=device-width, initial-scale=1">  
-   <link rel="stylesheet" href="style.css"/>
-   <script defer src="app.js"></script>  
-   <style>
-    body {
-        background-color: #f4f4f4;
-    }
-</style>
-   <link rel="icon" href="assets/dreamersavenuelogo.png"/>  
-   <title>Mentorship Program | Dreamers Avenue</title>  
-</head>  
-<body>  
-   <nav>  
-      <input type="checkbox" id="sidebar-active">  
-      <label for="sidebar-active" class="open-sidebar-button">  
-        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>  
-      </label>  
-      <label id="overlay" for="sidebar-active"></label>  
-      <div class="links-container">  
-        <label for="sidebar-active" class="close-sidebar-button">  
-           <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>  
-        </label>  
-  
-        <a href="index.html" class="nav-logo"><img src="assets/dreamersavenuelogo.png"></a>  
-        <a href="index.html">Home</a>  
-        <a href="mentorship.html">Mentorship</a>  
-        <a href="essayreview.html">Essay Review</a>  
-        <a href="volunteer.html">Volunteer</a>
-            <a href="#">Resources</a> 
-      </div>  
-   </nav>  
-  
-   <div class="mentorship-container">  
-    <div class="col1-b">  
-     <h1>Dreamers Avenue Mentorship Program</h1>  
-     <p>The Dreamers Avenue Mentorship Program empowers undocumented students by providing personalized guidance and support throughout the college application process.</p>  
-     <div class="apply-now-button">
-      <b><a href="https://docs.google.com/forms/d/e/1FAIpQLSdBN_GSOK18f0EEmLiBZ8fPkIAMnmXJoqo_VVn91WErP3cwmA/viewform?usp=dialog" target="_blank">Cohort 1 Applications are now Closed
-      </a></b>
-     </div>
-   </div>  
-    <div class="col2-b">  
-     <img src="assets/mentor-photo.jpg" alt="Mentorship Program Photo">  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentorship Program | Dreamers Avenue</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="additional-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Dreamers <span>Avenue</span></h1>
+            </div>
+            <nav>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                </label>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="mentorship.html" class="active">Mentorship</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="get-involved.html">Get Involved</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </div>
-  </div>
+</header>
 
-  <!-- COHORT TIMELINE-->
-   <div class="cohort-timeline">
-    <h2>2025 Cohort Timeline</h2>
-    <h3>We run the mentorship program in three cohorts per year. Each cohort lasts 3 months</h3>
-    <p><b>Cohort 1:</b> April 1 - June 30</p>
-    <p><b>Cohort 2:</b> August 1 - October 31</p>
-    <p><b>Cohort 3:</b> December 1 - February 28</p>
-   </div>
+    <main>
+        <!-- Page Banner -->
+        <section class="page-banner">
+            <div class="container">
+                <h2>Mentorship Program</h2>
+                <p>Connecting undocumented students with mentors who understand their unique challenges</p>
+            </div>
+        </section>
 
-   <!-- APPLICATION PROCESS -->
-   <div class="application-process">
-    <h2>How To Apply</h2>
-    <h3>For Mentors</h3>
-    <p class="application-process-p1"><b>Want to make a real difference in a student’s life? Become a mentor.</b></p>
-    <p>We're looking for people who:</p>
-    <ul>
-        <li>Understand or are passionate about the challenges undocumented students face</li>
-        <li>Have experience with the U.S. college application process</li>
-        <li>Are committed to meeting regularly and offering consistent, compassionate support</li>
-    </ul>
-    <p class="applications-include">Applications Include:</p>
-    <ul>
-        <li>Your background and relevant experience</li>
-        <li>Why you want to mentor</li>
-        <li>What areas you'd like to support (essays, financial aid, college search, etc.)</li>
-    </ul>
-    <a class="for-mentors" href="https://docs.google.com/forms/d/e/1FAIpQLSeYVqcTzzdEhb27PFMYKCl9_AXepBxi2hlh4gn7Gq3IUvRXcA/viewform?usp=dialog" target="_blank">Apply to be a Mentor</a>
+        <!-- Program Overview -->
+        <section class="program-overview">
+            <div class="container">
+                <h2>Program Overview</h2>
+                <div class="overview-content">
+                    <div class="overview-text">
+                        <p>Our mentorship program pairs undocumented high school students with trained mentors who guide them through every step of the college application process. Mentors provide personalized support, share their own experiences, and help students navigate the unique challenges they face.</p>
+                        <p>The program runs from September to May each year, with applications opening in July. Mentors and mentees meet weekly, either virtually or in person, and participate in monthly group workshops on topics like essay writing, scholarship applications, and financial planning.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <h3 class="for-mentees">For Mentees</h3>
-    <p class="application-process-p1"><b>If you’re an undocumented student in the U.S. and planning to apply to college, you’re eligible to apply.</b></p>
-    <p>To apply, you'll need to share:</p>
-    <ul>
-        <li>A bit about your background and goals</li>
-        <li>Your academic interests</li>
-        <li>Any challenges you're facing with the college process</li>
-    </ul>
-    <p class="once-you-apply">Once you apply, we’ll evaluate based on eligibility and match you with a mentor who fits your interests and needs.</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdBN_GSOK18f0EEmLiBZ8fPkIAMnmXJoqo_VVn91WErP3cwmA/viewform?usp=dialog" target="_blank">Apply to be a Mentee</a>
+        <!-- How It Works -->
+        <section class="how-it-works">
+            <div class="container">
+                <h2>How It Works</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-number">1</div>
+                        <div class="timeline-content">
+                            <h3>Application</h3>
+                            <p>Students and potential mentors complete an online application sharing their background, interests, and goals.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">2</div>
+                        <div class="timeline-content">
+                            <h3>Matching</h3>
+                            <p>Our team carefully matches mentees with mentors based on academic interests, career goals, and personal compatibility.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">3</div>
+                        <div class="timeline-content">
+                            <h3>Orientation</h3>
+                            <p>Mentors and mentees attend orientation sessions to learn about program expectations and build initial connections.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">4</div>
+                        <div class="timeline-content">
+                            <h3>Weekly Check-ins</h3>
+                            <p>Mentors and mentees meet weekly to work on college applications, discuss challenges, and track progress.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">5</div>
+                        <div class="timeline-content">
+                            <h3>Monthly Workshops</h3>
+                            <p>All participants attend monthly workshops on key topics like essay writing, financial aid, and interview skills.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">6</div>
+                        <div class="timeline-content">
+                            <h3>Celebration</h3>
+                            <p>We celebrate college acceptances and program completion with a special ceremony in May.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-   </div>
+        <!-- What Mentors Do -->
+        <section class="mentor-responsibilities" id="mentor">
+            <div class="container">
+                <h2>What Mentors Do</h2>
+                <div class="responsibilities-grid">
+                    <div class="responsibility-item">
+                        <div class="icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h3>Commit Time</h3>
+                        <p>Meet with mentees weekly (1-2 hours) and attend monthly workshops (3 hours).</p>
+                    </div>
+                    <div class="responsibility-item">
+                        <div class="icon">
+                            <i class="fas fa-pencil-alt"></i>
+                        </div>
+                        <h3>Guide Applications</h3>
+                        <p>Help with college selection, application forms, and essay writing.</p>
+                    </div>
+                    <div class="responsibility-item">
+                        <div class="icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h3>Navigate Financial Aid</h3>
+                        <p>Assist with scholarship searches and alternative funding options.</p>
+                    </div>
+                    <div class="responsibility-item">
+                        <div class="icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Provide Support</h3>
+                        <p>Offer emotional encouragement and help mentees build confidence.</p>
+                    </div>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#" class="btn primary-btn">Apply as a Mentor</a>
+                </div>
+            </div>
+        </section>
 
-   <!-- THE MATCHING PROCESS -->
-    <div class="matching-process">
-        <h3>The Matching Process</h3>
-        <p><b>We match mentors and mentees based on:</b></p>
-        <ul>
-            <li>Academic interests</li>
-            <li>Career goals</li>
-            <li>Specific areas of support</li>
-        </ul>
-        <p class="both">Both mentee and mentor will receive an email with their match, and both must confirm before the pairing is official. If a match doesn’t work out, we’ll do our best to rematch within the cohort.</p>
-    </div>
+        <!-- What Mentees Get -->
+        <section class="mentee-benefits" id="mentee">
+            <div class="container">
+                <h2>What Mentees Receive</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="icon">
+                            <i class="fas fa-user-friends"></i>
+                        </div>
+                        <h3>Personalized Guidance</h3>
+                        <p>One-on-one support from a mentor who understands your unique challenges.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>College Knowledge</h3>
+                        <p>Expert advice on college selection, applications, and admissions requirements.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Community Support</h3>
+                        <p>Connection with peers facing similar challenges and experiences.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="icon">
+                            <i class="fas fa-folder-open"></i>
+                        </div>
+                        <h3>Resource Access</h3>
+                        <p>Special access to scholarships, legal resources, and support services.</p>
+                    </div>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#" class="btn primary-btn">Apply as a Mentee</a>
+                </div>
+            </div>
+        </section>
 
-    <!-- MEETING EXPECTATIONS -->
-     <div class="meeting-expectations">
-        <h3>Meeting Expectations</h3>
-        <p><b>Time Commitment</b></p>
-        <ul>
-            <li>Meet at least 6 times over 3 months through video conferencing</li>
-            <li>Each meeting lasts 30 mins to 2 hours, depending on what's needed</li>
-        </ul>
-     </div>
+        <!-- FAQ -->
+        <section class="faq">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>When are applications due?</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Applications for both mentors and mentees open July 1st and close August 15th each year. The program runs from September through May.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What is the time commitment?</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Mentors and mentees meet weekly for 1-2 hours and attend monthly workshops (approximately 3 hours each). The total commitment is about 8-12 hours per month.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do I need to disclose my immigration status?</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>No. While our program is designed for undocumented students, we never require disclosure of immigration status. All information shared is kept strictly confidential.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What qualifications do mentors need?</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Mentors should have completed at least two years of college, be familiar with the college application process, and ideally have experience working with high school students. We provide comprehensive training for all mentors.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is there a cost to participate?</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>No. Our mentorship program is completely free for mentees. We are funded through donations and grants to ensure all services are accessible.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-     <!-- READY TO JOIN? -->
-      <div class="ready-to-join hidden">
-        <h3>Ready to Join?</h3>
-        <p>Whether you're applying to college or helping someone get there—we’ve made it easy to get started.</p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdBN_GSOK18f0EEmLiBZ8fPkIAMnmXJoqo_VVn91WErP3cwmA/viewform?usp=dialog" target="_blank">Apply to be a Mentor</a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdBN_GSOK18f0EEmLiBZ8fPkIAMnmXJoqo_VVn91WErP3cwmA/viewform?usp=dialog" target="_blank">Apply to be a Mentee</a>
-      </div>
-  
-   <div class="social-links">  
-      <p>Stay updated with our latest news and events.</p>  
-      <a href="https://www.instagram.com/dreamers.ave/" target="_blank"><img src="assets/instagram.png"></a>  
-      <a href="https://www.linkedin.com/company/dreamers-avenue/" target="_blank"><img src="assets/linkedin.png"></a>  
-      <a href="https://www.tiktok.com/@dreamers.ave/" target="_blank"><img src="assets/tiktok.png"></a>  
-   </div>  
-</body>  
+        <!-- CTA -->
+        <section class="final-cta">
+            <div class="container">
+                <h2>Ready to Join Our Community?</h2>
+                <div class="cta-buttons">
+                    <a href="#mentee" class="btn primary-btn">Apply as a Mentee</a>
+                    <a href="#mentor" class="btn secondary-btn">Become a Mentor</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Dreamers Avenue</h2>
+                    <p>Empowering Undocumented Students</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="mentorship.html">Mentorship</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> dreamers.avenue@outlook.com</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Ko-fi"><i class="fas fa-mug-hot"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>

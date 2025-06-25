@@ -3,80 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="icon" href="assets/dreamersavenuelogo.png"/>
-    <title>Dreamers Avenue</title>
+    <title>Dreamers Avenue | Empowering Undocumented Students</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="additional-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <input type="checkbox" id="sidebar-active">
-        <label for="sidebar-active" class="open-sidebar-button">
-            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-        </label>
-        <label id="overlay" for="sidebar-active"></label>
-        <div class="links-container">
-            <label for="sidebar-active" class="close-sidebar-button">
-                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> 
-            </label>
-
-            <a class="nav-logo"><img src="assets/dreamersavenuelogo.png"></a>
-            <a href="index.html">Home</a>
-            <a href="mentorship.html">Mentorship</a>
-            <a href="essayreview.html">Essay Review</a>
-            <a href="volunteer.html">Volunteer</a>
-            <a href="index.html">Resources</a>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Dreamers <span>Avenue</span></h1>
+            </div>
+            <nav>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                </label>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="mentorship.html">Mentorship</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="get-involved.html">Get Involved</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <div class="row">
-        <div class="col-1">
-            <p>At Dreamers Avenue, we believe that every student, regardless of their background or immigration status, deserves the opportunity to pursue higher education and achieve their dreams.</p>
-            <p>We are a community built on hope, resilience, and the power of mentorship, dedicated to supporting undocumented students as they navigate the college application process.</p>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Empowering Undocumented Students Through Mentorship</h2>
+                    <p>Guiding undocumented high school students through the college application process with personalized support and resources.</p>
+                    <div class="cta-buttons">
+                        <a href="mentorship.html#mentee" class="btn primary-btn">Join as Mentee</a>
+                        <a href="mentorship.html#mentor" class="btn primary-btn">Become a Mentor</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Overview Section -->
+        <section class="overview">
+            <div class="container">
+                <h2>Our Mission</h2>
+                <p>Dreamers Avenue is dedicated to breaking down barriers to higher education for undocumented students through mentorship, resources, and community support.</p>
+            </div>
+        </section>
+
+        <!-- Impact Stats -->
+        <section class="impact">
+            <div class="container">
+                <h2>Our Impact</h2>
+                <div class="stats-container">
+                    <div class="stat-box">
+                        <h3>20</h3>
+                        <p>Students Mentored</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>479</h3>
+                        <p>Students Reached</p>
+                    </div>
+                    <!--<div class="stat-box">
+                        <h3>$2.5M+</h3>
+                        <p>Scholarships Secured</p>
+                    </div>-->
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="container">
+                <h2>Success Stories</h2>
+                <div class="testimonial-container">
+                    <!--<div class="testimonial">
+                        <p>"Dreamers Avenue gave me the confidence and guidance I needed to apply to college. My mentor helped me navigate the complex application process and find scholarships I qualified for."</p>
+                        <h4>- Maria S., UCLA Student</h4>
+                    </div>-->
+                    <div class="testimonial">
+                        <p>"What inspired me to become a mentor is I come from an immigrant parent and I never got the help that I needed to go into higher education so I want to be that person to help guide others and not have them go through the hardships or mistakes that I went through to be or go to college."</p>
+                        <h4>- Johanna T., Volunteer Mentor</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="final-cta">
+            <div class="container">
+                <h2>Ready to Make a Difference?</h2>
+                <div class="cta-buttons">
+                    <a href="mentorship.html#mentee" class="btn primary-btn">Apply as a Mentee</a>
+                    <a href="mentorship.html#mentor" class="btn primary-btn">Volunteer as a Mentor</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Dreamers Avenue</h2>
+                    <p>Empowering Undocumented Students</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="mentorship.html">Mentorship</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> dreamers.avenue@outlook.com</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Ko-fi"><i class="fas fa-mug-hot"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-2">
-            <img src="assets/dreamersavenuelogo.png" class="home-logo">
-        </div>
-    </div>
+    </footer>
 
-    <div class="resources-home">  
-        <a href="mentorship.html"><div class="col1-a">  
-            <img src="assets/mentor-icon.png">
-           <h3>Mentorship for Undocumented Students</h3>  
-           <p>Empowering undocumented students with one-on-one guidance to achieve their college dreams.</p>  
-        </div></a>
-        <a href="essayreview.html"><div class="col2-a">  
-            <img src="assets/essay-icon.png">
-           <h3>College and Scholarship Essay Review</h3>  
-           <p>Polish your college and scholarship essays with personalized, high-quality feedback</p>  
-        </div></a>
-        <a href="volunteer.html"><div class="col3-a">  
-            <img src="assets/volunteer-icon.png">
-           <h3>Volunteer as a Mentor or Essay Reviewer</h3>  
-           <p>Join our mission to empower students—your skills can create life-changing opportunities.</p>  
-        </div></a>
-     </div>     
-
-     <div class="contact-us">
-        <h2>Contact Us</h2>
-        <p>We'd love to hear from you! Whether you have questions, suggestions, or just want to connect, feel free to reach out to us.</p>
-        <form action="https://formspree.io/f/xpwzoply" method="POST" class="contact-form">
-            <label for="email" class="form-label">Your email:</label>
-            <input type="email" name="email" id="email" class="form-input" required>
-    
-            <label for="message" class="form-label">Your message:</label>
-            <textarea name="message" id="message" class="form-textarea" required></textarea>
-    
-            <button type="submit" class="form-button">Send</button>
-          </form>
-     </div>
-
-    <div class="contact-section">
-        <div class="social-links">
-            <p>Stay updated with our latest news and events.</p>
-            <a href="https://www.instagram.com/dreamers.ave/" target="_blank"><img src="assets/instagram.png"></a>
-            <a href="https://www.linkedin.com/company/dreamers-avenue/" target="_blank"><img src="assets/linkedin.png"></a>
-            <a href="https://www.tiktok.com/@dreamers.ave/" target="_blank"><img src="assets/tiktok.png"></a>
-        </div>
-    </div>
+    <script src="script.js"></script>
 </body>
 </html>

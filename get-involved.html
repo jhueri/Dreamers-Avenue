@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved | Dreamers Avenue</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="additional-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Dreamers <span>Avenue</span></h1>
+            </div>
+            <nav>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                </label>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="mentorship.html">Mentorship</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="get-involved.html" class="active">Get Involved</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Banner -->
+        <section class="page-banner">
+            <div class="container">
+                <h2>Get Involved</h2>
+                <p>Join our mission to empower undocumented students through education</p>
+            </div>
+        </section>
+
+        <!-- Ways to Get Involved -->
+        <section class="involvement-options">
+            <div class="container">
+                <h2>Ways to Support Our Mission</h2>
+                <div class="options-grid">
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-user-friends"></i>
+                        </div>
+                        <h3>Become a Mentor</h3>
+                        <p>Guide an undocumented student through the college application process with weekly meetings and ongoing support.</p>
+                        <a href="mentorship.html#mentor" class="btn secondary-btn">Learn More</a>
+                    </div>
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Volunteer</h3>
+                        <p>Support our events, workshops, and administrative needs with your time and skills.</p>
+                        <a href="#volunteer-form" class="btn secondary-btn">Sign Up</a>
+                    </div>
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <h3>Donate</h3>
+                        <p>Contribute financially to support our programs, scholarships, and operational costs.</p>
+                        <a href="#donate" class="btn secondary-btn">Donate Now</a>
+                    </div>
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Partner With Us</h3>
+                        <p>Collaborate with Dreamers Avenue through corporate partnerships, sponsorships, or joint initiatives.</p>
+                        <a href="#partnership" class="btn secondary-btn">Explore Partnerships</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Volunteer Section -->
+        <section class="volunteer-section" id="volunteer-form">
+            <div class="container">
+                <h2>Volunteer Opportunities</h2>
+                <div class="volunteer-content">
+                    <div class="volunteer-info">
+                        <p>We have various volunteer opportunities that match different skills and availability. Volunteers can help with:</p>
+                        <ul class="volunteer-list">
+                            <li><i class="fas fa-check-circle"></i> Workshop facilitation</li>
+                            <li><i class="fas fa-check-circle"></i> Event planning and coordination</li>
+                            <li><i class="fas fa-check-circle"></i> Content creation (guides, resources)</li>
+                            <li><i class="fas fa-check-circle"></i> Social media management</li>
+                            <li><i class="fas fa-check-circle"></i> Administrative support</li>
+                            <li><i class="fas fa-check-circle"></i> Translation services</li>
+                        </ul>
+                        <p>Volunteer commitments range from one-time events to ongoing weekly roles. All volunteers receive training and support from our team.</p>
+                    </div>
+                    <div class="volunteer-form">
+                        <h3>Volunteer Interest Form</h3>
+                        <form id="volunteer-signup">
+                            <div class="form-group">
+                                <label for="volunteer-name">Full Name</label>
+                                <input type="text" id="volunteer-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="volunteer-email">Email</label>
+                                <input type="email" id="volunteer-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="volunteer-phone">Phone Number</label>
+                                <input type="tel" id="volunteer-phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="volunteer-interests">Areas of Interest</label>
+                                <select id="volunteer-interests" multiple required>
+                                    <option value="workshops">Workshop Facilitation</option>
+                                    <option value="events">Event Planning</option>
+                                    <option value="content">Content Creation</option>
+                                    <option value="social">Social Media</option>
+                                    <option value="admin">Administrative Support</option>
+                                    <option value="translation">Translation Services</option>
+                                </select>
+                                <small>Hold Ctrl/Cmd to select multiple options</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="volunteer-availability">Availability</label>
+                                <select id="volunteer-availability" required>
+                                    <option value="" disabled selected>Select your availability</option>
+                                    <option value="one-time">One-time events only</option>
+                                    <option value="monthly">Monthly commitment</option>
+                                    <option value="weekly">Weekly commitment</option>
+                                    <option value="flexible">Flexible</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="volunteer-message">Why are you interested in volunteering?</label>
+                                <textarea id="volunteer-message" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn primary-btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Donate Section -->
+        <section class="donate-section" id="donate">
+            <div class="container">
+                <h2>Support Our Work</h2>
+                <div class="donate-content">
+                    <div class="donate-info">
+                        <p>Your donations help us provide essential services to undocumented students, including:</p>
+                        <ul class="donate-impact">
+                            <li><i class="fas fa-graduation-cap"></i> <strong>Scholarships</strong> for college expenses</li>
+                            <li><i class="fas fa-book"></i> <strong>Resources</strong> and educational materials</li>
+                            <li><i class="fas fa-users"></i> <strong>Workshops</strong> and training programs</li>
+                            <li><i class="fas fa-hands-helping"></i> <strong>Mentorship</strong> program support</li>
+                        </ul>
+                        <div class="donation-tiers">
+                            <h3>Donation Impact</h3>
+                            <div class="tier">
+                                <h4>$25</h4>
+                                <p>Provides college application fee waivers for one student</p>
+                            </div>
+                            <div class="tier">
+                                <h4>$50</h4>
+                                <p>Funds workshop materials for 10 students</p>
+                            </div>
+                            <div class="tier">
+                                <h4>$100</h4>
+                                <p>Supports mentor training for two volunteers</p>
+                            </div>
+                            <div class="tier">
+                                <h4>$500</h4>
+                                <p>Sponsors a scholarship for textbooks and supplies</p>
+                            </div>
+                            <div class="tier">
+                                <h4>$1,000+</h4>
+                                <p>Funds a semester scholarship for one student</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="donate-options">
+                        <h3>Ways to Donate</h3>
+                        <div class="donation-buttons">
+                            <a href="#" class="btn primary-btn">One-Time Donation</a>
+                            <a href="#" class="btn secondary-btn">Monthly Giving</a>
+                        </div>
+                        <div class="other-ways">
+                            <h4>Other Ways to Give</h4>
+                            <ul>
+                                <li><i class="fas fa-briefcase"></i> <a href="#">Corporate Matching</a></li>
+                                <li><i class="fas fa-hand-holding-usd"></i> <a href="#">Donor-Advised Funds</a></li>
+                                <li><i class="fas fa-gift"></i> <a href="#">In-Kind Donations</a></li>
+                                <li><i class="fas fa-mug-hot"></i> <a href="#">Support us on Ko-fi</a></li>
+                            </ul>
+                        </div>
+                        <div class="tax-info">
+                            <p>Dreamers Avenue is a 501(c)(3) nonprofit organization. All donations are tax-deductible to the extent allowed by law.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partnership Section -->
+        <section class="partnership-section" id="partnership">
+            <div class="container">
+                <h2>Partner With Us</h2>
+                <div class="partnership-content">
+                    <div class="partnership-info">
+                        <p>We collaborate with organizations that share our commitment to educational equity and supporting undocumented students. Partnership opportunities include:</p>
+                        <ul class="partnership-list">
+                            <li><i class="fas fa-handshake"></i> <strong>Corporate Sponsorships</strong> for events and programs</li>
+                            <li><i class="fas fa-chalkboard-teacher"></i> <strong>Workshop Collaborations</strong> with industry experts</li>
+                            <li><i class="fas fa-building"></i> <strong>Internship Pathways</strong> for our students</li>
+                            <li><i class="fas fa-bullhorn"></i> <strong>Awareness Campaigns</strong> to amplify our mission</li>
+                        </ul>
+                        <p>Our partners benefit from increased visibility in the community, employee engagement opportunities, and the chance to make a meaningful impact on educational equity.</p>
+                    </div>
+                    <div class="partnership-form">
+                        <h3>Partnership Inquiry Form</h3>
+                        <form id="partnership-inquiry">
+                            <div class="form-group">
+                                <label for="org-name">Organization Name</label>
+                                <input type="text" id="org-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-name">Contact Person</label>
+                                <input type="text" id="contact-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email</label>
+                                <input type="email" id="contact-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-phone">Phone</label>
+                                <input type="tel" id="contact-phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="partnership-type">Partnership Interest</label>
+                                <select id="partnership-type" required>
+                                    <option value="" disabled selected>Select partnership type</option>
+                                    <option value="sponsorship">Corporate Sponsorship</option>
+                                    <option value="workshops">Workshop Collaboration</option>
+                                    <option value="internships">Internship Pathways</option>
+                                    <option value="campaigns">Awareness Campaigns</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="partnership-message">Tell us about your organization and partnership ideas</label>
+                                <textarea id="partnership-message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn primary-btn">Submit Inquiry</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Current Partners -->
+        <section class="current-partners">
+            <div class="container">
+                <h2>Our Current Partners</h2>
+                <div class="partners-grid">
+                    <div class="partner-logo">
+                        <img src="https://via.placeholder.com/200x100" alt="Partner 1">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://via.placeholder.com/200x100" alt="Partner 2">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://via.placeholder.com/200x100" alt="Partner 3">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://via.placeholder.com/200x100" alt="Partner 4">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://via.placeholder.com/200x100" alt="Partner 5">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://via.placeholder.com/200x100" alt="Partner 6">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Dreamers Avenue</h2>
+                    <p>Empowering Undocumented Students</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="mentorship.html">Mentorship</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> dreamers.avenue@outlook.com</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Ko-fi"><i class="fas fa-mug-hot"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
