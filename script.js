@@ -174,6 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   })
 
+  const action = form.getAttribute("action");
   if (action && action.includes("formsubmit.co")) return;
 
   // Smooth scrolling for anchor links
