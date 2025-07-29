@@ -104,8 +104,11 @@ document.addEventListener("DOMContentLoaded", () => {
   // Form submissions
   const forms = document.querySelectorAll("form")
   forms.forEach((form) => {
-    form.addEventListener("submit", (e) => {
-      e.preventDefault()
+  const action = form.getAttribute("action");
+  if (action && action.includes("formsubmit.co")) return; // let Formsubmit forms submit normally
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
 
       // Simple form validation
       let isValid = true
