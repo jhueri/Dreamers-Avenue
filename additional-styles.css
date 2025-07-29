@@ -461,6 +461,10 @@
   margin-bottom: 2.5rem;
 }
 
+.resource-section h3 {
+  text-align: center
+}
+
 .resource-section h2::after {
   left: 50%;
   transform: translateX(-50%);
