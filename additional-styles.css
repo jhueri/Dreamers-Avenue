@@ -6,6 +6,7 @@
   color: var(--white);
   text-align: center;
   padding: 3rem 0;
+  margin-top: 75px;
 }
 
 .page-banner h2 {
@@ -251,6 +252,10 @@
 .timeline-content:hover {
   transform: translateX(10px);
   box-shadow: var(--shadow-lg);
+}
+
+.cohort-schedule {
+  background-color: var(--light-gray);
 }
 
 .mentor-responsibilities,
