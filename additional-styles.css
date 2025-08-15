@@ -462,7 +462,7 @@
 }
 
 .resource-section h3 {
-  text-align: center
+  text-align: center;
 }
 
 .resource-section h2::after {

@@ -104,11 +104,11 @@ document.addEventListener("DOMContentLoaded", () => {
   // Form submissions
   const forms = document.querySelectorAll("form")
   forms.forEach((form) => {
-  const action = form.getAttribute("action");
-  if (action && action.includes("formsubmit.co")) return; // let Formsubmit forms submit normally
+    const action = form.getAttribute("action")
+    if (action && action.includes("formsubmit.co")) return // let Formsubmit forms submit normally
 
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
+    form.addEventListener("submit", (e) => {
+      e.preventDefault()
 
       // Simple form validation
       let isValid = true
@@ -156,26 +156,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     })
   })
-
-  // Add error class on blur if required field is empty
-  const requiredFields = document.querySelectorAll("[required]")
-  requiredFields.forEach((field) => {
-    field.addEventListener("blur", function () {
-      if (!this.value.trim()) {
-        this.classList.add("error")
-      } else {
-        this.classList.remove("error")
-      }
-    })
-
-    // Remove error class when user starts typing
-    field.addEventListener("input", function () {
-      this.classList.remove("error")
-    })
-  })
-
-  const action = form.getAttribute("action");
-  if (action && action.includes("formsubmit.co")) return;
 
   // Smooth scrolling for anchor links
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {

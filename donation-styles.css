@@ -1,0 +1,253 @@
+/* Additional styles for donation page */
+.donation-tiers {
+  background-color: var(--light-gray);
+  text-align: center;
+  position: relative;
+}
+
+.donation-tiers h2::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tiers-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.tier-box {
+  background-color: var(--white);
+  padding: 3rem 2rem;
+  border-radius: var(--border-radius);
+  width: 300px;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.tier-box.featured {
+  transform: scale(1.05);
+  border: 3px solid var(--gold);
+}
+
+.tier-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background-color: var(--medium-blue);
+  transition: var(--transition);
+}
+
+.tier-box.featured::before {
+  background-color: var(--gold);
+  width: 100%;
+  opacity: 0.1;
+}
+
+.tier-box:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+}
+
+.tier-box.featured:hover {
+  transform: scale(1.05) translateY(-10px);
+}
+
+.tier-box:hover::before {
+  width: 100%;
+  opacity: 0.1;
+}
+
+.tier-icon {
+  font-size: 3rem;
+  color: var(--medium-blue);
+  margin-bottom: 1.5rem;
+}
+
+.tier-box.featured .tier-icon {
+  color: var(--gold);
+}
+
+.tier-box h3 {
+  font-size: 2.5rem;
+  color: var(--dark-blue);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.tier-box h4 {
+  font-size: 1.3rem;
+  color: var(--medium-blue);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.tier-box.featured h4 {
+  color: var(--gold);
+}
+
+.tier-box p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.popular-badge {
+  position: absolute;
+  top: 20px;
+  right: -30px;
+  background-color: var(--gold);
+  color: var(--white);
+  padding: 0.5rem 2rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transform: rotate(45deg);
+  box-shadow: var(--shadow-sm);
+}
+
+.custom-amount {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.custom-amount p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.campaign-link {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.campaign-link p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.other-ways {
+  background-color: var(--white);
+  text-align: center;
+  position: relative;
+}
+
+.other-ways h2::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.support-options {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.support-option {
+  background-color: var(--white);
+  padding: 3rem 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+  max-width: 350px;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.support-option::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background-color: var(--gold);
+  transition: var(--transition);
+}
+
+.support-option:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+}
+
+.support-option:hover::before {
+  width: 100%;
+  opacity: 0.1;
+}
+
+.support-icon {
+  font-size: 3rem;
+  color: var(--medium-blue);
+  margin-bottom: 1.5rem;
+}
+
+.support-option h3 {
+  font-size: 1.5rem;
+  color: var(--dark-blue);
+  margin-bottom: 1rem;
+}
+
+.support-option p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.social-share {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-share a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--medium-blue);
+  color: var(--white);
+  border-radius: 50%;
+  font-size: 1.5rem;
+  transition: var(--transition);
+}
+
+.social-share a:hover {
+  background-color: var(--gold);
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .tiers-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tier-box.featured {
+    transform: none;
+    margin: 1rem 0;
+  }
+
+  .tier-box.featured:hover {
+    transform: translateY(-10px);
+  }
+
+  .support-options {
+    flex-direction: column;
+    align-items: center;
+  }
+}
